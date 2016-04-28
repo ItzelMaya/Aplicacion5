@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Día de la tierra</title>
+
+<!--grupo css-->
+<link rel="stylesheet" href="css/temasapp5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<!--Script para imagenes de sustitución-->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body>
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Día de la tierra</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>¿Por qué se celebra?</h1>
+         <div>
+         <p>Desde 1970 cada 22 de abril se celebra el día internacional de la tierra; creado con el fin de generar participación y conciencia ambiental entre las personas, así como para apoyar los programas e iniciativas ambientales que se gestan año a año desde entonces.</p>
+         <br>
+         </div>
+        <div><center>
+          <img src="imagenes/tierra.jpg" width="50%" height="50%"></center> </div>
+       </div>
+      </div>
+      
+      <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>Qué podemos hacer para cuidar nuestro planeta?</h1>
+       <div><center>
+          <img src="imagenes/cuidar_planeta.jpg" width="50%" height="50%"></center> </div>
+          <br>
+         <div>
+         <li><strong>Usa el transporte público.</strong>Los viajes en coche suponen la mitad de las emisiones totales de CO2 procedentes del sector del transporte y la mayor parte se genera en los viajes de casa al trabajo o a la escuela, y viceversa.</li>
+         <li><strong>Consume productos con certificación ecológica.</strong>La garantía de que un producto sea de “producción ecológica” nos informa de que nos llevamos a casa comida sana. Una explotación agrícola o ganadera con el sello de producción ecológica no contamina los ríos,  lagos con pesticidas y proporciona a los animales alimentos naturales.</li>
+         <li><strong>Consume alimentos de temporada.</strong>Ahora en los supermercados se abastecen de productos traídos desde lejos. Esto requiere grandes cantidades de energía producirlos. Los alimentos autóctonos y de temporada requieren menos energía tanto es su cultivo como en su transporte.</li>
+         <li><strong>Apaga la luz</strong>Las habitaciones que no se utilizan deberían permanecer a oscuras. Y se deben sustituir las bombillas de toda la casa por unas de bajo consumo.</li>
+         <li><strong>Usa el lavavajillas en lugar de lavar los platos a mano.</strong>Lavar los platos a mano con agua caliente puede resultar hasta un 60% más caro.</li>
+         <li><strong>Recicla.</strong>El reciclaje es una de las maneras más fáciles de combatir el Calentamiento Global</li>
+         <li><strong>Usa riego por goteo en tu jardín</strong>Los sistemas de riego por goteo son eficaces un 90% mientras que los sistemas tradicionales apenas llegan al 60%.</li>
+         <li><strong>Compost.</strong>¡Devuelve tu basura orgánica a donde pertenece, a la tierra!</li>
+         <li><strong>Menos plásticos.</strong>Las bolsas de plástico y botellas que no se reciclan acaban en el agua y sobre el terreno en el que persisten durante cerca de 100 años. </li>
+         <li><strong>Plantar árboles en su jardín y la comunidad.</strong>Todo el mundo sabe que la plantación de árboles puede ayudar al medio ambiente. Los árboles secuestran las emisiones de CO2, reduciendo al mínimo los efectos del calentamiento global. </li>
+         <br>
+         </div>
+       </div>
+      </div>
+      
+      
+      <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>¿Por qué debemos cuidar nuestro planeta?</h2>
+     </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Reflexión</h2>
+     </a>
+   </li>
+   </ul>
+   </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+    <h4>App5 Día de la Tierra</h4>
+    <div>
+    <img src="res/android/earth-icon.png" width="46" height="46">
+    </div>
+    <h4>Itzel Noemí Maya Muciño</h4>
+    </div>
+   </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿Por qué debemos cuidar nuestro planeta?</h1>
+   </div>
+   <div data-role="content" align="center">
+   <p>Debemos proteger nuestro ambiente porque lo necesitamos. ¡Y mucho! Dependemos de él para existir. Nuestro planeta nos brinda todos los recursos naturales que necesitamos para alimentarnos, construir nuestras viviendas, tener luz, transportarnos, vestirnos, etc. Mira un segundo a tu alrededor... todo lo que ves - papel, lápiz, computadora, goma, etc. Se obtiene, directa o indirectamente, del ambiente, por lo cual es importante que aseguremos su capacidad de continuar proveyéndolos. 
+
+Si destruimos el ambiente estaremos perjudicando a nosotros mismos, a nuestros hijos y a nuestros nietos. Cuidar el mundo es cuidarnos y esa es otra muy buena razón ¿no te parece? </p>
+    <div>
+   <p>¡Toca las Imagenes!</p>
+   <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','imagenes/1mundo.jpg',1)"><img src="imagenes/2mundo.jpg" width="60%" height="60%" id="Image2" /></a>
+</p>
+<p>&nbsp;</p>
+    </div>
+    <div align="center">
+    <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','imagenes/1consejo.jpg',3)"><img src="imagenes/2consejo.jpg" width="60%" height="60%" id="Image4" /></a>
+</p>
+<p>&nbsp;</p>
+<br> 
+      <a href="http://www.wwf.org.mx/?gclid=CMS2_Ij2rswCFQ8vaQod2RoC7w"> Más información </a>
+    </div>
+    </div>
+   </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4>App5, Itzel Noemí Maya Muciño</h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Reflexión</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+    <p>Nuestro planeta nos representa, entonces que clase de personas somos? Día a día estamos tan enfocados en nuestras rutinas que no nos damos cuenta cuanto estamos dañando a NUESTRO PLANETA. Pon atención a todo lo que estamos provocando, calor en invierno, frio en verano. Dejemos de ser egoistas y hagamos un cambio.</p>
+    <br>
+    <!-- Start WOWSlider.com -->
+<iframe src="indexwow.html" style="width:480px;height:360px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+
+    </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4>App5, Itzel Noemí Maya Muciño</h4>
+  </div>
+ </div>
+</div>
+    
+</body>
+</html>
